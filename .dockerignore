@@ -1,0 +1,14 @@
+.git
+.husky
+.next
+.vscode
+node_modules
+.dockerignore
+.env*
+.eslint*
+.git*
+.prettier*
+Dockerfile
+LICENSE
+*.txt
+*.md
