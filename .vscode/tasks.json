@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build:dev",
+			"dependsOn": ["install", "kill-port"],
+			"dependsOrder": "sequence"
+		},
+		{
+			"label": "build:prod",
+			"dependsOn": ["install", "kill-port", "build"],
+			"dependsOrder": "sequence"
+		},
+		{
+			"label": "install",
+			"command": "pnpm",
+			"args": ["install"],
+			"group": "build",
+			"type": "shell"
+		},
+		{
+			"label": "kill-port",
+			"command": "npx",
+			"args": ["kill-port", "3000"],
+			"group": "build",
+			"type": "shell"
+		},
+		{
+			"label": "build",
+			"command": "pnpm",
+			"args": ["build"],
+			"group": "build",
+			"type": "shell"
+		}
+	]
+}

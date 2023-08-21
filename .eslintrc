@@ -1,0 +1,51 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"env": {
+		"browser": true,
+		"jest": true,
+		"es6": true,
+		"node": true
+	},
+	"plugins": ["@typescript-eslint", "react", "prettier"],
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"requireConfigFile": false
+	},
+	"extends": [
+		"next/core-web-vitals",
+		"eslint:recommended",
+		"prettier",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"rules": {
+		"no-unused-expressions": 2,
+		"no-unused-labels": 2,
+		"no-undef": 1,
+		"no-undefined": 1,
+		"react/jsx-uses-react": 1,
+		"react/jsx-uses-vars": 1,
+		"no-mixed-spaces-and-tabs": 0,
+		"no-redeclare": 1,
+		"no-console": 0,
+		"no-inner-declarations": 0,
+		"no-useless-escape": 1,
+		"no-unused-vars": 0,
+		"@typescript-eslint/no-unused-vars": 0,
+		"@typescript-eslint/no-var-requires": 0,
+		"@typescript-eslint/no-explicit-any": 1,
+		"react-hooks/rules-of-hooks": 0,
+		"import/no-anonymous-default-export": [
+			2,
+			{
+				"allowAnonymousFunction": true,
+				"allowArrowFunction": true
+			}
+		]
+	}
+}

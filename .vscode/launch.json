@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug dev",
+			"type": "node-terminal",
+			"request": "launch",
+			"preLaunchTask": "build:dev",
+			"command": "pnpm dev",
+			"internalConsoleOptions": "openOnSessionStart"
+		},
+		{
+			"name": "Debug prod",
+			"type": "node-terminal",
+			"request": "launch",
+			"preLaunchTask": "build:prod",
+			"command": "cross-env NODE_ENV=production pnpm start",
+			"internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}

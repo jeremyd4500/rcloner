@@ -1,0 +1,15 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"typescript.tsdk": "node_modules\\typescript\\lib",
+	"typescript.tsserver.experimental.enableProjectDiagnostics": true
+}
