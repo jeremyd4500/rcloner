@@ -6,6 +6,8 @@
 		"analyze": "cross-env ANALYZE=true NEXT_TELEMETRY_DISABLED=1 next build",
 		"build": "cross-env NEXT_TELEMETRY_DISABLED=1 next build",
 		"dev": "cross-env NEXT_TELEMETRY_DISABLED=1 next dev",
+		"docker:build": "COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build",
+		"docker:dev": "docker-compose up",
 		"format": "prettier --write \"**/**.{js,jsx,ts,tsx,json,css,scss,html,yml}\"",
 		"lint": "eslint . --ext .ts,.tsx --ignore-path .eslintignore",
 		"prepare": "husky install",
