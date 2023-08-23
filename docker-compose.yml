@@ -6,8 +6,11 @@ services:
       target: runner
     volumes:
       - .:/app
+      - ./mounts/data:/var/rcloner/data:rw
+      - ./mounts/logs:/var/rcloner/logs:rw
     command: npm run dev
     ports:
       - "3000:8080"
     environment:
+      PORT: 8080
       NODE_ENV: development

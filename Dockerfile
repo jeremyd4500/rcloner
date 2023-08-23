@@ -20,7 +20,7 @@ WORKDIR /tmp/rclone
 RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
 RUN unzip rclone-current-linux-amd64.zip && \
     cd rclone-*-linux-amd64 && \
-    cp -r rclone /usr/bin/
+    cp rclone /usr/bin/
 
 WORKDIR /app
 
